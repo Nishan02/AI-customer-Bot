@@ -166,9 +166,7 @@ useEffect(() => {
 
       <div className="chat-shell">
 
-        {/* Top notch */}
 
-        <div className="notch" />
 
 
 
@@ -213,6 +211,7 @@ useEffect(() => {
           </div>
 
         </header>
+        <hr className="header-divider" />
 
 
 
