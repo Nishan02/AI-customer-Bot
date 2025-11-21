@@ -1,0 +1,21 @@
+{
+  "name": "projectt",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.0.0",
+    "groq-sdk": "^0.36.0",
+    "mongoose": "^8.0.0",
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
