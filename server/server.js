@@ -14,7 +14,6 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://ai-customer-bot.onrender.com" // REMOVED trailing slash
   ],
   credentials: true
 }));
@@ -24,8 +23,8 @@ app.use(express.json());
 // MongoDB connect
 mongoose
   .connect(process.env.MONGODB_URI)
-  .then(() => console.log("✅ MongoDB connected"))
-  .catch((err) => console.error("❌ MongoDB connection error:", err));
+  .then(() => console.log(" MongoDB connected"))
+  .catch((err) => console.error(" MongoDB connection error:", err));
 
 // Groq client
 const groq = new Groq({
@@ -45,5 +44,5 @@ app.use("/api/chat", chatRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
-  console.log(`🚀 Groq-powered server running on port ${PORT}`)
+  console.log(` Groq-powered server running on port ${PORT}`)
 );
