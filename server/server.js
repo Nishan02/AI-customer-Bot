@@ -12,10 +12,11 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: '*', // Allow ANYONE to access (Easiest for testing)
-    // OR
-    origin: ['http://localhost:5173', 'https://ai-customer-bot.onrender.com/'], // Allow specific domains
-    credentials: true
+  origin: [
+    "http://localhost:5173",
+    "https://ai-customer-bot.onrender.com" // REMOVED trailing slash
+  ],
+  credentials: true
 }));
 
 app.use(express.json());
