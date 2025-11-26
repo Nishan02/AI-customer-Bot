@@ -7,7 +7,7 @@ import "./App.css";
 import ChatBotIcon from "./assets/chatbot.png";
 
 export default function App() {
-  const API_BASE_URL = "http://localhost:5000/api/chat";
+  const API_BASE_URL =  import.meta.env.VITE_API_URL || "http://localhost:5000/api/chat";
 
   const [sessionId, setSessionId] = useState(null);
   const [messages, setMessages] = useState([]);
