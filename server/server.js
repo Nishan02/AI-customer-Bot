@@ -39,6 +39,9 @@ app.locals.groq = groq;
 app.get("/", (req, res) => {
   res.send("Groq AI Support Bot API Running");
 });
+app.get("/api/chat", (req, res) => {
+  res.send("This is chat");
+});
 
 // Routes
 app.use("/api/chat", chatRoutes);
