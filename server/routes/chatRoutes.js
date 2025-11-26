@@ -7,38 +7,35 @@ const router = express.Router();
 // FAQ list
 const FAQS = [
   {
-    question: "What are your support hours?",
-    answer: "Our support is available 24/7 via chat and email.",
+    question: "What services does Unthinkable Solutions provide?",
+    answer: "We offer software development, AI solutions, cloud engineering, product development, and IT consulting.",
   },
   {
-    question: "How can I reset my password?",
-    answer:
-      "Click 'Forgot Password' on the login page and follow the instructions sent to your email.",
+    question: "Do you provide custom software development?",
+    answer: "Yes, we build tailored software solutions based on client requirements.",
   },
   {
-    question: "How long does delivery take?",
-    answer: "Standard delivery takes 3-5 business days.",
+    question: "How can I contact the support team?",
+    answer: "You can reach us at support@unthinkable.co or via the contact form on our website.",
   },
   {
-    question: "Where can I track my order?",
-    answer:
-      "You can track your order using the 'Track Order' section in your account dashboard.",
+    question: "Does Unthinkable Solutions work internationally?",
+    answer: "Yes, we serve clients globally across multiple industries.",
   },
   {
-    question: "Can I change my delivery address?",
-    answer:
-      "Yes, you can change your delivery address before the order is shipped. Go to your orders page and select 'Edit Address'.",
+    question: "Do you offer dedicated development teams?",
+    answer: "Yes, we offer dedicated engineering teams for long-term projects.",
   },
   {
-    question: "Do you offer refunds?",
-    answer:
-      "Yes, refunds are available within 7 days of delivery after item verification.",
+    question: "Where are your offices located?",
+    answer: "We are headquartered in India with distributed teams across multiple regions.",
   },
   {
-    question: "How do I contact customer care?",
-    answer: "You can reach customer care at support@unthinkable.co or via chat.",
-  },
+    question: "Do you provide project maintenance?",
+    answer: "Yes, we offer ongoing support and maintenance for all delivered projects.",
+  }
 ];
+
 
 function generateSessionId() {
   return crypto.randomBytes(16).toString("hex");
